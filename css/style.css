@@ -35,7 +35,7 @@ header {
     position: relative;
     width: 269px;
     height: 72px;
-    left: 60%;
+    left: 3%;
     top: 54px;
 }
 
@@ -44,6 +44,7 @@ Nav {
     top: 100%;
     background: #4B4069;
     width: 100%;
+    display: none;
 }
 
 nav ul {
@@ -65,4 +66,8 @@ nav a {
 
 nav a:hover {
     color: rgba(225, 225, 225, 0.6);
+}
+
+.nav-toggle:checked~nav {
+    display: block;
 }
