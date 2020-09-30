@@ -131,6 +131,15 @@
                                                             left: 65%;
                                                             bottom: 0;
                                                         }
+                                                        
+                                                        .gradient-bar {
+                                                            position: absolute;
+                                                            width: 100%;
+                                                            height: 147px;
+                                                            top: 516px;
+                                                            background: linear-gradient(180deg, #2A0C4E 25%, rgba(75, 64, 105, 0) 100%);
+                                                            z-index: 10;
+                                                        }
                                                         /* @media screen and (min-width: 0px) {
                                                         .img-hero-tab {
                                                             display: none;
