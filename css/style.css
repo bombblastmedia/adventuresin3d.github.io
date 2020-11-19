@@ -142,7 +142,26 @@
                                                             z-index: 4;
                                                         }
                                                         
-                                                        .artwork-img {}
+                                                        .artwork-img {
+                                                            display: grid;
+                                                            grid-template-columns: repeat(2, 0fr);
+                                                        }
+                                                        
+                                                        .dohnut {
+                                                            object-fit: cover;
+                                                        }
+                                                        
+                                                        .chair {
+                                                            object-fit: cover;
+                                                        }
+                                                        
+                                                        .mg {
+                                                            object-fit: cover;
+                                                        }
+                                                        
+                                                        .apples {
+                                                            object-fit: cover;
+                                                        }
                                                         /* @media screen and (min-width: 0px) {
                                                         .img-hero-tab {
                                                             display: none;
