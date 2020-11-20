@@ -146,36 +146,28 @@
                                                         
                                                         .artwork-img {
                                                             display: grid;
-                                                            grid-template-columns: repeat(2, 2fr);
-                                                            gap: 0em 0em;
-                                                            height: 20em;
+                                                            grid-template: '2fr 2fr' '2fr 2fr';
+                                                        }
+                                                        
+                                                        img {
+                                                            width: 100%;
+                                                            height: 100%;
                                                         }
                                                         
                                                         .dohnut {
-                                                            display: flex;
-                                                            justify-content: center;
-                                                            max-width: 100%;
                                                             object-fit: cover;
                                                         }
                                                         
                                                         .chair {
-                                                            display: flex;
-                                                            justify-content: center;
-                                                            max-width: 100%;
                                                             object-fit: cover;
                                                         }
                                                         
                                                         .mg {
-                                                            display: flex;
-                                                            justify-content: center;
-                                                            max-width: 100%;
                                                             object-fit: cover;
+                                                            ;
                                                         }
                                                         
                                                         .apples {
-                                                            display: flex;
-                                                            justify-content: center;
-                                                            max-width: 100%;
                                                             object-fit: cover;
                                                         }
                                                         /* @media screen and (min-width: 0px) {
