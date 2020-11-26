@@ -190,14 +190,21 @@
                                                                                                             top: 50%;
                                                                                                             transform: translate(-50%, -50%);
                                                                                                         }
-                                                                                                        /* @media screen and (min-width: 0px) {
-                                                                                                        .img-hero-tab {
-                                                                                                            display: none;
+                                                                                                        
+                                                                                                        .circle-header {
+                                                                                                            position: absolute;
+                                                                                                            width: 142px;
+                                                                                                            height: 71.86px;
+                                                                                                            font-family: Josefin Sans;
+                                                                                                            font-style: normal;
+                                                                                                            font-weight: bold;
+                                                                                                            font-size: 15.3976px;
+                                                                                                            line-height: 36px;
+                                                                                                            /* or 233% */
+                                                                                                            text-align: center;
+                                                                                                            letter-spacing: 0.25em;
+                                                                                                            /* #FBFEF9 */
                                                                                                         }
-                                                                                                        .img-hero-dt {
-                                                                                                            display: none;
-                                                                                                        }
-                                                                                                        }*/
                                                                                                         
                                                                                                         @media screen and (min-width: 768px) {
                                                                                                             header {
@@ -221,16 +228,29 @@
                                                                                                             nav a {
                                                                                                                 opacity: 100%;
                                                                                                             }
+                                                                                                            .circle {
+                                                                                                                position: absolute;
+                                                                                                                width: 30em;
+                                                                                                                height: 30em;
+                                                                                                                background: #343434;
+                                                                                                                opacity: 0.5;
+                                                                                                                border-radius: 50%;
+                                                                                                                left: 50%;
+                                                                                                                top: 50%;
+                                                                                                                transform: translate(-50%, -50%);
+                                                                                                            }
                                                                                                         }
-                                                                                                        /* @media screen and (min-width: 1024px) {
-                                                        .img-hero-tab {
-                                                            display: none;
-                                                        }
-                                                        .img-hero-dt {
-                                                            z-index: 1;
-                                                            position: absolute;
-                                                            width: 35%;
-                                                            height: auto;
-                                                            left: 65%;
-                                                            bottom: 0;
-                                                        }*/
+                                                                                                        
+                                                                                                        @media screen and (min-width: 1024px) {
+                                                                                                            .circle {
+                                                                                                                position: absolute;
+                                                                                                                width: 50em;
+                                                                                                                height: 50em;
+                                                                                                                background: #343434;
+                                                                                                                opacity: 0.5;
+                                                                                                                border-radius: 50%;
+                                                                                                                left: 50%;
+                                                                                                                top: 50%;
+                                                                                                                transform: translate(-50%, -50%);
+                                                                                                            }
+                                                                                                        }
