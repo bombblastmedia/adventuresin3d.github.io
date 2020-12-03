@@ -225,6 +225,33 @@
                                                                                                                                                         opacity: 100;
                                                                                                                                                     }
                                                                                                                                                     
+                                                                                                                                                    .main-text-header {
+                                                                                                                                                        font-family: Josefin Sans;
+                                                                                                                                                        font-style: normal;
+                                                                                                                                                        font-weight: 600;
+                                                                                                                                                        font-size: 0.6rem;
+                                                                                                                                                        line-height: 262%;
+                                                                                                                                                        /* or 262% */
+                                                                                                                                                        text-align: center;
+                                                                                                                                                        letter-spacing: 0.16em;
+                                                                                                                                                        color: #E1E1E1;
+                                                                                                                                                        text-decoration: underline;
+                                                                                                                                                        margin-top: 4em;
+                                                                                                                                                    }
+                                                                                                                                                    
+                                                                                                                                                    .main-text {
+                                                                                                                                                        font-family: Josefin Sans;
+                                                                                                                                                        font-style: normal;
+                                                                                                                                                        font-weight: 1;
+                                                                                                                                                        font-size: 0.5rem;
+                                                                                                                                                        line-height: 157%;
+                                                                                                                                                        /* or 157% */
+                                                                                                                                                        letter-spacing: 0.16em;
+                                                                                                                                                        color: #E1E1E1;
+                                                                                                                                                        text-align: center;
+                                                                                                                                                        margin: 2em 5em;
+                                                                                                                                                    }
+                                                                                                                                                    
                                                                                                                                                     @media screen and (min-width: 768px) {
                                                                                                                                                         header {
                                                                                                                                                             height: 232px;
