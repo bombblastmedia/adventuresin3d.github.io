@@ -258,13 +258,13 @@
                                                                                                                                                     .footer-container {
                                                                                                                                                         position: absolute;
                                                                                                                                                         width: 100%;
-                                                                                                                                                        height: 5em;
+                                                                                                                                                        height: auto;
                                                                                                                                                         background: #2A0C4E;
                                                                                                                                                     }
                                                                                                                                                     
                                                                                                                                                     .social-icons {
                                                                                                                                                         text-align: center;
-                                                                                                                                                        padding: 22px;
+                                                                                                                                                        padding: 1.3em;
                                                                                                                                                     }
                                                                                                                                                     
                                                                                                                                                     .fab {
@@ -392,6 +392,24 @@
                                                                                                                                                             text-align: left;
                                                                                                                                                             margin: 0;
                                                                                                                                                             padding: 5em;
+                                                                                                                                                        }
+                                                                                                                                                        .fab {
+                                                                                                                                                            width: 1.5em;
+                                                                                                                                                            font-size: 2.5rem;
+                                                                                                                                                        }
+                                                                                                                                                        .copywrite {
+                                                                                                                                                            background-color: #2A0C4E;
+                                                                                                                                                            font-family: Josefin Sans;
+                                                                                                                                                            font-style: normal;
+                                                                                                                                                            font-weight: 1;
+                                                                                                                                                            font-size: 0.5rem;
+                                                                                                                                                            line-height: 157%;
+                                                                                                                                                            /* or 157% */
+                                                                                                                                                            letter-spacing: 0.16em;
+                                                                                                                                                            color: #E1E1E1;
+                                                                                                                                                            text-align: center;
+                                                                                                                                                            padding: 2em;
+                                                                                                                                                            margin: 0px;
                                                                                                                                                         }
                                                                                                                                                     }
                                                                                                                                                     
