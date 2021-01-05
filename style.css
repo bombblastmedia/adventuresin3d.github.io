@@ -1,4 +1,5 @@
   *,
+                                                                                                                                                 *,
                                                                                                                                                     *:after,
                                                                                                                                                     *:before {
                                                                                                                                                         -webkit-box-sizing: border-box;
@@ -49,7 +50,7 @@
                                                                                                                                                         top: 100%;
                                                                                                                                                         background: #4B4069;
                                                                                                                                                         width: 100%;
-                                                                                                                                                        /*  display: none;*/
+                                                                                                                                                        /*  display     : none;*/
                                                                                                                                                         transform: scale(1, 0);
                                                                                                                                                         transform-origin: top;
                                                                                                                                                         transition: transform 400ms ease-in-out;
@@ -147,7 +148,7 @@
                                                                                                                                                     
                                                                                                                                                     .artwork-img {
                                                                                                                                                         display: grid;
-                                                                                                                                                        grid-template: '2fr 2fr' '2fr 2fr';
+                                                                                                                                                        grid-template: '2fr 2fr''2fr 2fr';
                                                                                                                                                         width: 100%;
                                                                                                                                                     }
                                                                                                                                                     
@@ -255,6 +256,49 @@
                                                                                                                                                         margin: 2em 5em;
                                                                                                                                                     }
                                                                                                                                                     
+                                                                                                                                                    .footer-container {
+                                                                                                                                                        position: absolute;
+                                                                                                                                                        width: 100%;
+                                                                                                                                                        height: auto;
+                                                                                                                                                        background: #2A0C4E;
+                                                                                                                                                    }
+                                                                                                                                                    
+                                                                                                                                                    .social-icons {
+                                                                                                                                                        text-align: center;
+                                                                                                                                                        padding: 1.3em;
+                                                                                                                                                    }
+                                                                                                                                                    
+                                                                                                                                                    .fab {
+                                                                                                                                                        width: 1.2em;
+                                                                                                                                                        font-size: 1.5rem;
+                                                                                                                                                    }
+                                                                                                                                                    
+                                                                                                                                                    .fa-facebook-square {
+                                                                                                                                                        color: #4267B2;
+                                                                                                                                                    }
+                                                                                                                                                    
+                                                                                                                                                    .fa-twitter-square {
+                                                                                                                                                        color: #1DA1F2;
+                                                                                                                                                    }
+                                                                                                                                                    
+                                                                                                                                                    .fa-instagram-square {
+                                                                                                                                                        color: #E1306C;
+                                                                                                                                                    }
+                                                                                                                                                    
+                                                                                                                                                    .copywrite {
+                                                                                                                                                        background-color: #2A0C4E;
+                                                                                                                                                        font-family: Josefin Sans;
+                                                                                                                                                        font-style: normal;
+                                                                                                                                                        font-weight: 1;
+                                                                                                                                                        font-size: 0.5rem;
+                                                                                                                                                        line-height: 157%;
+                                                                                                                                                        /* or 157% */
+                                                                                                                                                        letter-spacing: 0.16em;
+                                                                                                                                                        color: #E1E1E1;
+                                                                                                                                                        text-align: center;
+                                                                                                                                                        padding-bottom: 2em;
+                                                                                                                                                    }
+                                                                                                                                                    
                                                                                                                                                     @media screen and (min-width: 768px) {
                                                                                                                                                         header {
                                                                                                                                                             height: 232px;
@@ -349,6 +393,24 @@
                                                                                                                                                             text-align: left;
                                                                                                                                                             margin: 0;
                                                                                                                                                             padding: 5em;
+                                                                                                                                                        }
+                                                                                                                                                        .fab {
+                                                                                                                                                            width: 1.5em;
+                                                                                                                                                            font-size: 2.5rem;
+                                                                                                                                                        }
+                                                                                                                                                        .copywrite {
+                                                                                                                                                            background-color: #2A0C4E;
+                                                                                                                                                            font-family: Josefin Sans;
+                                                                                                                                                            font-style: normal;
+                                                                                                                                                            font-weight: 1;
+                                                                                                                                                            font-size: 0.5rem;
+                                                                                                                                                            line-height: 157%;
+                                                                                                                                                            /* or 157% */
+                                                                                                                                                            letter-spacing: 0.16em;
+                                                                                                                                                            color: #E1E1E1;
+                                                                                                                                                            text-align: center;
+                                                                                                                                                            padding: 2em;
+                                                                                                                                                            margin: 0px;
                                                                                                                                                         }
                                                                                                                                                     }
                                                                                                                                                     
