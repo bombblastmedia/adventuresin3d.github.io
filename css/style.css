@@ -1,0 +1,469 @@
+                                                                                                                                            *,
+                                                                                                                                            *:after,
+                                                                                                                                            *:before {
+                                                                                                                                                -webkit-box-sizing: border-box;
+                                                                                                                                                -moz-box-sizing: border-box;
+                                                                                                                                                box-sizing: border-box;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                             :root {
+                                                                                                                                                --background-color: #4B4069;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            html {
+                                                                                                                                                box-sizing: border-box;
+                                                                                                                                                height: 100%;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            body {
+                                                                                                                                                margin: 0;
+                                                                                                                                                padding: 0;
+                                                                                                                                                height: 100%;
+                                                                                                                                                background-color: var(--background-color);
+                                                                                                                                                font-family: 'Josefin', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                                                                                                                                                color: #E1E1E1;
+                                                                                                                                                font-size: 100%;
+                                                                                                                                                line-height: 1.5;
+                                                                                                                                                overflow-x: hidden;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            header {
+                                                                                                                                                background: radial-gradient(50% 50% at 50% 50%, #4B4069 0%, #2A0C4E 100%);
+                                                                                                                                                text-align: center;
+                                                                                                                                                position: relative;
+                                                                                                                                                width: 100%;
+                                                                                                                                                height: 13em;
+                                                                                                                                                z-index: 4;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .logo {
+                                                                                                                                                position: relative;
+                                                                                                                                                width: 269px;
+                                                                                                                                                height: 72px;
+                                                                                                                                                top: 54px;
+                                                                                                                                                z-index: 3;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            Nav {
+                                                                                                                                                position: absolute;
+                                                                                                                                                top: 100%;
+                                                                                                                                                background: #4B4069;
+                                                                                                                                                width: 100%;
+                                                                                                                                                /*  display     : none;*/
+                                                                                                                                                transform: scale(1, 0);
+                                                                                                                                                transform-origin: top;
+                                                                                                                                                transition: transform 400ms ease-in-out;
+                                                                                                                                                z-index: 6;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            nav ul {
+                                                                                                                                                /*display: flex;*/
+                                                                                                                                                justify-content: center;
+                                                                                                                                                list-style: none;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            nav li {
+                                                                                                                                                margin-right: 3em;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            nav a {
+                                                                                                                                                color: #E1E1E1;
+                                                                                                                                                text-decoration: none;
+                                                                                                                                                font-size: 1rem;
+                                                                                                                                                font-weight: 700;
+                                                                                                                                                opacity: 0;
+                                                                                                                                                transition: opacity 150ms ease-in-out;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            nav a:hover {
+                                                                                                                                                color: rgba(225, 225, 225, 0.6);
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .nav-toggle:checked~nav {
+                                                                                                                                                /* display: block;*/
+                                                                                                                                                transform: scale(1, 1);
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .nav-toggle:checked~nav a {
+                                                                                                                                                opacity: 1;
+                                                                                                                                                transition: opacity 250ms ease-in-out 250ms;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .nav-toggle {
+                                                                                                                                                display: none;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .nav-toggle-label {
+                                                                                                                                                position: absolute;
+                                                                                                                                                width: 15px;
+                                                                                                                                                height: 10px;
+                                                                                                                                                left: 85%;
+                                                                                                                                                top: 158px;
+                                                                                                                                                z-index: 2;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .nav-toggle-label span,
+                                                                                                                                            .nav-toggle-label span::before,
+                                                                                                                                            .nav-toggle-label span::after {
+                                                                                                                                                display: block;
+                                                                                                                                                background: #FBFEF9;
+                                                                                                                                                height: 2px;
+                                                                                                                                                width: 1em;
+                                                                                                                                                border-radius: 2px;
+                                                                                                                                                position: relative;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .nav-toggle-label span::before,
+                                                                                                                                            .nav-toggle-label span::after {
+                                                                                                                                                content: '';
+                                                                                                                                                position: absolute;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .nav-toggle-label span::before {
+                                                                                                                                                bottom: 5px;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .nav-toggle-label span::after {
+                                                                                                                                                top: 5px;
+                                                                                                                                            }
+                                                                                                                                            /*.img-hero-dt {
+                                                                                                                                                        z-index: 1;
+                                                                                                                                                        position: absolute;
+                                                                                                                                                        width: 35%;
+                                                                                                                                                        height: auto;
+                                                                                                                                                        left: 65%;
+                                                                                                                                                        bottom: 0;
+                                                                                                                                                    }*/
+                                                                                                                                            
+                                                                                                                                            .gradient-bar {
+                                                                                                                                                position: absolute;
+                                                                                                                                                width: 100%;
+                                                                                                                                                height: 5em;
+                                                                                                                                                top: 100%;
+                                                                                                                                                background: linear-gradient(180deg, #2A0C4E 25%, rgba(75, 64, 105, 0) 100%);
+                                                                                                                                                z-index: 4;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .artwork-img {
+                                                                                                                                                display: grid;
+                                                                                                                                                grid-template: '2fr 2fr''2fr 2fr';
+                                                                                                                                                width: 100%;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .circle-container {
+                                                                                                                                                position: relative;
+                                                                                                                                                width: 100vw;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            img {
+                                                                                                                                                width: 100%;
+                                                                                                                                                height: 100%;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .dohnut {
+                                                                                                                                                object-fit: cover;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .chair {
+                                                                                                                                                object-fit: cover;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .mg {
+                                                                                                                                                object-fit: cover;
+                                                                                                                                                ;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .apples {
+                                                                                                                                                object-fit: cover;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .circle {
+                                                                                                                                                position: absolute;
+                                                                                                                                                width: 13em;
+                                                                                                                                                height: 13em;
+                                                                                                                                                background: #343434;
+                                                                                                                                                opacity: 0.7;
+                                                                                                                                                border-radius: 50%;
+                                                                                                                                                left: 50%;
+                                                                                                                                                top: 50%;
+                                                                                                                                                transform: translate(-50%, -50%);
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .circle-header {
+                                                                                                                                                position: absolute;
+                                                                                                                                                width: 12em;
+                                                                                                                                                left: 15%;
+                                                                                                                                                top: 14%;
+                                                                                                                                                font-family: Josefin Sans;
+                                                                                                                                                font-style: normal;
+                                                                                                                                                font-weight: bold;
+                                                                                                                                                font-size: 0.7rem;
+                                                                                                                                                line-height: 233%;
+                                                                                                                                                text-align: center;
+                                                                                                                                                letter-spacing: 0.25em;
+                                                                                                                                                color: #FBFEF9;
+                                                                                                                                                opacity: 100;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .circle-quote {
+                                                                                                                                                position: absolute;
+                                                                                                                                                width: 12em;
+                                                                                                                                                left: 12%;
+                                                                                                                                                top: 50%;
+                                                                                                                                                font-family: Josefin Sans;
+                                                                                                                                                font-style: italic;
+                                                                                                                                                font-weight: bold;
+                                                                                                                                                font-size: 0.8125rem;
+                                                                                                                                                line-height: 163%;
+                                                                                                                                                /* or 163% */
+                                                                                                                                                text-align: center;
+                                                                                                                                                letter-spacing: 0.16em;
+                                                                                                                                                color: #E1E1E1;
+                                                                                                                                                opacity: 100;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            #main-text-cotainer {
+                                                                                                                                                width: 100%;
+                                                                                                                                                height: auto;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .main-text-header {
+                                                                                                                                                font-family: Josefin Sans;
+                                                                                                                                                font-style: normal;
+                                                                                                                                                font-weight: 600;
+                                                                                                                                                font-size: 0.6rem;
+                                                                                                                                                line-height: 262%;
+                                                                                                                                                /* or 262% */
+                                                                                                                                                text-align: center;
+                                                                                                                                                letter-spacing: 0.16em;
+                                                                                                                                                color: #E1E1E1;
+                                                                                                                                                text-decoration: underline;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .main-text {
+                                                                                                                                                font-family: Josefin Sans;
+                                                                                                                                                font-style: normal;
+                                                                                                                                                font-weight: 1;
+                                                                                                                                                font-size: 0.5rem;
+                                                                                                                                                line-height: 157%;
+                                                                                                                                                /* or 157% */
+                                                                                                                                                letter-spacing: 0.16em;
+                                                                                                                                                color: #E1E1E1;
+                                                                                                                                                text-align: left;
+                                                                                                                                                padding: 4em 5em;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .footer-container {
+                                                                                                                                                position: absolute;
+                                                                                                                                                width: 100%;
+                                                                                                                                                height: auto;
+                                                                                                                                                background: #2A0C4E;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .social-icons {
+                                                                                                                                                text-align: center;
+                                                                                                                                                padding: 1.3em;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .fab {
+                                                                                                                                                width: 1.2em;
+                                                                                                                                                font-size: 1.5rem;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .fa-facebook-square {
+                                                                                                                                                color: #4267B2;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .fa-twitter-square {
+                                                                                                                                                color: #1DA1F2;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .fa-instagram-square {
+                                                                                                                                                color: #E1306C;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            .copywrite {
+                                                                                                                                                background-color: #2A0C4E;
+                                                                                                                                                font-family: Josefin Sans;
+                                                                                                                                                font-style: normal;
+                                                                                                                                                font-weight: 1;
+                                                                                                                                                font-size: 0.5rem;
+                                                                                                                                                line-height: 157%;
+                                                                                                                                                /* or 157% */
+                                                                                                                                                letter-spacing: 0.16em;
+                                                                                                                                                color: #E1E1E1;
+                                                                                                                                                text-align: center;
+                                                                                                                                                padding-bottom: 2em;
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            @media screen and (min-width: 768px) {
+                                                                                                                                                header {
+                                                                                                                                                    height: 232px;
+                                                                                                                                                }
+                                                                                                                                                .logo {
+                                                                                                                                                    top: 75px;
+                                                                                                                                                }
+                                                                                                                                                .nav-toggle-label {
+                                                                                                                                                    display: none;
+                                                                                                                                                }
+                                                                                                                                                nav {
+                                                                                                                                                    all: unset;
+                                                                                                                                                }
+                                                                                                                                                nav ul {
+                                                                                                                                                    display: flex;
+                                                                                                                                                    position: relative;
+                                                                                                                                                    top: 5em;
+                                                                                                                                                    margin-bottom: 2em;
+                                                                                                                                                }
+                                                                                                                                                nav a {
+                                                                                                                                                    opacity: 100%;
+                                                                                                                                                }
+                                                                                                                                                .circle {
+                                                                                                                                                    position: absolute;
+                                                                                                                                                    width: 30em;
+                                                                                                                                                    height: 30em;
+                                                                                                                                                    background: #343434;
+                                                                                                                                                    opacity: 0.5;
+                                                                                                                                                    border-radius: 50%;
+                                                                                                                                                    left: 50%;
+                                                                                                                                                    top: 50%;
+                                                                                                                                                    transform: translate(-50%, -50%);
+                                                                                                                                                }
+                                                                                                                                                .circle-header {
+                                                                                                                                                    position: absolute;
+                                                                                                                                                    width: 15em;
+                                                                                                                                                    left: 6%;
+                                                                                                                                                    top: 14%;
+                                                                                                                                                    font-family: Josefin Sans;
+                                                                                                                                                    font-style: normal;
+                                                                                                                                                    font-weight: bold;
+                                                                                                                                                    font-size: 1.8rem;
+                                                                                                                                                    line-height: 233%;
+                                                                                                                                                    text-align: center;
+                                                                                                                                                    letter-spacing: 0.25em;
+                                                                                                                                                    color: #FBFEF9;
+                                                                                                                                                    opacity: 100;
+                                                                                                                                                }
+                                                                                                                                                .circle-quote {
+                                                                                                                                                    position: absolute;
+                                                                                                                                                    width: 12em;
+                                                                                                                                                    left: 19%;
+                                                                                                                                                    top: 55%;
+                                                                                                                                                    font-family: Josefin Sans;
+                                                                                                                                                    font-style: italic;
+                                                                                                                                                    font-weight: bold;
+                                                                                                                                                    font-size: 1.6rem;
+                                                                                                                                                    line-height: 163%;
+                                                                                                                                                    /* or 163% */
+                                                                                                                                                    text-align: center;
+                                                                                                                                                    letter-spacing: 0.16em;
+                                                                                                                                                    color: #E1E1E1;
+                                                                                                                                                    opacity: 100;
+                                                                                                                                                }
+                                                                                                                                                #main-text-cotainer {
+                                                                                                                                                    display: grid;
+                                                                                                                                                    grid-template-columns: 50% 50%;
+                                                                                                                                                }
+                                                                                                                                                .main-text-header {
+                                                                                                                                                    place-self: center start;
+                                                                                                                                                    font-family: Josefin Sans;
+                                                                                                                                                    font-style: normal;
+                                                                                                                                                    font-weight: 600;
+                                                                                                                                                    font-size: 0.9rem;
+                                                                                                                                                    line-height: 262%;
+                                                                                                                                                    /* or 262% */
+                                                                                                                                                    letter-spacing: 0.16em;
+                                                                                                                                                    color: #E1E1E1;
+                                                                                                                                                    text-decoration: underline;
+                                                                                                                                                }
+                                                                                                                                                .main-text {
+                                                                                                                                                    place-self: center start;
+                                                                                                                                                    font-family: Josefin Sans;
+                                                                                                                                                    font-style: normal;
+                                                                                                                                                    font-weight: 1;
+                                                                                                                                                    font-size: 0.7rem;
+                                                                                                                                                    line-height: 157%;
+                                                                                                                                                    /* or 157% */
+                                                                                                                                                    letter-spacing: 0.16em;
+                                                                                                                                                    color: #E1E1E1;
+                                                                                                                                                    text-align: left;
+                                                                                                                                                    margin: 0;
+                                                                                                                                                    padding: 0em;
+                                                                                                                                                }
+                                                                                                                                                .fab {
+                                                                                                                                                    width: 1.5em;
+                                                                                                                                                    font-size: 2.5rem;
+                                                                                                                                                }
+                                                                                                                                                .copywrite {
+                                                                                                                                                    background-color: #2A0C4E;
+                                                                                                                                                    font-family: Josefin Sans;
+                                                                                                                                                    font-style: normal;
+                                                                                                                                                    font-weight: 1;
+                                                                                                                                                    font-size: 0.5rem;
+                                                                                                                                                    line-height: 157%;
+                                                                                                                                                    /* or 157% */
+                                                                                                                                                    letter-spacing: 0.16em;
+                                                                                                                                                    color: #E1E1E1;
+                                                                                                                                                    text-align: center;
+                                                                                                                                                    padding: 2em;
+                                                                                                                                                    margin: 0px;
+                                                                                                                                                }
+                                                                                                                                            }
+                                                                                                                                            
+                                                                                                                                            @media screen and (min-width: 1024px) {
+                                                                                                                                                .logo {
+                                                                                                                                                    position: relative;
+                                                                                                                                                    width: 369px;
+                                                                                                                                                    height: 102px;
+                                                                                                                                                    top: 54px;
+                                                                                                                                                    z-index: 3;
+                                                                                                                                                }
+                                                                                                                                                .circle {
+                                                                                                                                                    position: absolute;
+                                                                                                                                                    width: 50em;
+                                                                                                                                                    height: 50em;
+                                                                                                                                                    background: #343434;
+                                                                                                                                                    opacity: 0.5;
+                                                                                                                                                    border-radius: 50%;
+                                                                                                                                                    left: 50%;
+                                                                                                                                                    top: 50%;
+                                                                                                                                                    transform: translate(-50%, -50%);
+                                                                                                                                                }
+                                                                                                                                                .circle-header {
+                                                                                                                                                    position: absolute;
+                                                                                                                                                    width: 15em;
+                                                                                                                                                    left: 6%;
+                                                                                                                                                    top: 14%;
+                                                                                                                                                    font-family: Josefin Sans;
+                                                                                                                                                    font-style: normal;
+                                                                                                                                                    font-weight: bold;
+                                                                                                                                                    font-size: 3rem;
+                                                                                                                                                    line-height: 233%;
+                                                                                                                                                    text-align: center;
+                                                                                                                                                    letter-spacing: 0.25em;
+                                                                                                                                                    color: #FBFEF9;
+                                                                                                                                                    opacity: 100;
+                                                                                                                                                }
+                                                                                                                                                .circle-quote {
+                                                                                                                                                    position: absolute;
+                                                                                                                                                    width: 12em;
+                                                                                                                                                    left: 19%;
+                                                                                                                                                    top: 55%;
+                                                                                                                                                    font-family: Josefin Sans;
+                                                                                                                                                    font-style: italic;
+                                                                                                                                                    font-weight: bold;
+                                                                                                                                                    font-size: 2.6rem;
+                                                                                                                                                    line-height: 163%;
+                                                                                                                                                    /* or 163% */
+                                                                                                                                                    text-align: center;
+                                                                                                                                                    letter-spacing: 0.16em;
+                                                                                                                                                    color: #E1E1E1;
+                                                                                                                                                    opacity: 100;
+                                                                                                                                                }
+                                                                                                                                                .main-text-header {
+                                                                                                                                                    font-size: 1.5rem;
+                                                                                                                                                }
+                                                                                                                                                .main-text {
+                                                                                                                                                    font-size: 1rem;
+                                                                                                                                                }
+                                                                                                                                            }
